@@ -1,58 +1,58 @@
-# Pneumonia X-Ray Classification - Pneumonia X-ray Image Recognition
+# Pneumonia X-Ray Classification
 
-Project Introduction
+## Project Introduction
 
-This project uses a chest X-ray image dataset to construct a convolutional neural network (CNN) for binary classification recognition of pneumonia. The model can distinguish between normal lungs and X-rays of pneumonia infection.
+This project uses a chest X-ray image dataset to build a Convolutional Neural Network (CNN) for binary classification of pneumonia. The model can distinguish between normal lungs and pneumonia-infected X-ray images.
 
-Data source
+## Data Source
 
-- ** Dataset Name ** : Chest X-Ray Images (Pneumonia)
-- ** Source: Kaggle
-- ** Data Size ** : 5,856 X-ray images (JPEG format), divided into a training set, a validation set, and a test set
+- **Dataset Name**: Chest X-Ray Images (Pneumonia)
+- **Source**: Kaggle
+- **Data Size**: 5,856 X-ray images (JPEG format), divided into training, validation, and test sets
 
-Project process
+## Project Workflow
 
-Step 1: Data loading and preprocessing (image scaling, normalization, data augmentation)
-Step 2: Build the convolutional Neural Network (CNN) model
-Step 3: Model Training (10 epochs, using GPU acceleration)
-Step Four: Model Evaluation (Accuracy Rate, precision Rate, recall Rate, confusion matrix
-Step 5: Visualization of results
+- Step 1: Data loading and preprocessing (image resizing, normalization, data augmentation)
+- Step 2: Build Convolutional Neural Network (CNN) model
+- Step 3: Model training (10 epochs, GPU accelerated)
+- Step 4: Model evaluation (accuracy, precision, recall, confusion matrix)
+- Step 5: Result visualization
 
-Model effect
+## Model Performance
 
-- Accuracy rate of the test set: 79%
-- Accuracy rate of pneumonia category: 0.76
-- Recall rate for pneumonia category: 0.98 (Low rate of missed diagnosis, particularly important for medical scenarios)
-- Normal category accuracy rate: 0.93
-- Normal category recall rate: 0.48
+- Test set accuracy: 79%
+- Pneumonia class precision: 0.76
+- Pneumonia class recall: 0.98 (low missed diagnosis rate, especially important for medical scenarios)
+- Normal class precision: 0.93
+- Normal class recall: 0.48
 
-Confusion matrix
+### Confusion Matrix
 
-Actual/Prediction: Normal prediction: Pneumonia prediction
-|-----------|----------|----------|
-Actual normal: 113, 121
-Actual pneumonia cases: 9-381
+| Actual\Predicted | Predicted Normal | Predicted Pneumonia |
+|------------------|------------------|---------------------|
+| Actual Normal    | 113              | 121                 |
+| Actual Pneumonia | 9                | 381                 |
 
-The technology used
+## Technologies Used
 
 - Python (PyTorch, Torchvision, NumPy, Matplotlib, Seaborn)
-Convolutional Neural Network (CNN
-- Data augmentation (random flipping, rotation)
-Gpu-accelerated training
+- Convolutional Neural Network (CNN)
+- Data augmentation (random flip, rotation)
+- GPU accelerated training
 
-How to run
+## How to Run
 
-1. Clone the repository to the local machine
-2. install dependencies: pip install torch torchvision numpy matplotlib seaborn scikit-learn
-3. Start Jupyter Notebook and run pneumonia_xray_classification.ipynb
+1. Clone this repository to your local machine
+2. Install dependencies: `pip install torch torchvision numpy matplotlib seaborn scikit-learn`
+3. Launch Jupyter Notebook and run `pneumonia_xray_classification.ipynb`
 
-Project value
+## Project Value
 
-- Postgraduate entrance examination/recommendation for postgraduate study re-examination: Prove the practical ability of deep learning and computer vision
-- Resume: Demonstrate experience in PyTorch, CNN, and medical image processing projects
-- Introduction to Medical AI: Understanding the Application of Image Classification in Medical Diagnosis
+- Graduate school application: Demonstrates practical skills in deep learning and computer vision
+- Job resume: Shows project experience with PyTorch, CNN, and medical image processing
+- Medical AI introduction: Understands the application of image classification in medical diagnosis
 
-Contact Information
+## Contact
 
--GitHub: 11zhouyuhan
-- project link: https://github.com/11zhouyuhan/pneumonia-xray-classification
+- GitHub: 11zhouyuhan
+- Project Link: https://github.com/11zhouyuhan/pneumonia-xray-classification
