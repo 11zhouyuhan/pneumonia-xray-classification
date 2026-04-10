@@ -1,58 +1,58 @@
-# Pneumonia X-Ray Classification - 肺炎X光图像识别
+# Pneumonia X-Ray Classification - Pneumonia X-ray Image Recognition
 
-## 项目简介
+Project Introduction
 
-本项目使用胸部X光图像数据集，构建卷积神经网络（CNN）对肺炎进行二分类识别。模型能够区分正常肺部与肺炎感染的X光片。
+This project uses a chest X-ray image dataset to construct a convolutional neural network (CNN) for binary classification recognition of pneumonia. The model can distinguish between normal lungs and X-rays of pneumonia infection.
 
-## 数据来源
+Data source
 
-- **数据集名称**：Chest X-Ray Images (Pneumonia)
-- **来源**：Kaggle
-- **数据规模**：5856张X光图像（JPEG格式），分为训练集、验证集、测试集
+- ** Dataset Name ** : Chest X-Ray Images (Pneumonia)
+- ** Source: Kaggle
+- ** Data Size ** : 5,856 X-ray images (JPEG format), divided into a training set, a validation set, and a test set
 
-## 项目流程
+Project process
 
-- 步骤一：数据加载与预处理（图像缩放、归一化、数据增强）
-- 步骤二：搭建卷积神经网络（CNN）模型
-- 步骤三：模型训练（10个epoch，使用GPU加速）
-- 步骤四：模型评估（准确率、精确率、召回率、混淆矩阵）
-- 步骤五：结果可视化
+Step 1: Data loading and preprocessing (image scaling, normalization, data augmentation)
+Step 2: Build the convolutional Neural Network (CNN) model
+Step 3: Model Training (10 epochs, using GPU acceleration)
+Step Four: Model Evaluation (Accuracy Rate, precision Rate, recall Rate, confusion matrix
+Step 5: Visualization of results
 
-## 模型效果
+Model effect
 
-- 测试集准确率：79%
-- 肺炎类别精确率：0.76
-- 肺炎类别召回率：0.98（漏诊率低，对医疗场景尤为重要）
-- 正常类别精确率：0.93
-- 正常类别召回率：0.48
+- Accuracy rate of the test set: 79%
+- Accuracy rate of pneumonia category: 0.76
+- Recall rate for pneumonia category: 0.98 (Low rate of missed diagnosis, particularly important for medical scenarios)
+- Normal category accuracy rate: 0.93
+- Normal category recall rate: 0.48
 
-### 混淆矩阵
+Confusion matrix
 
-| 实际\预测 | 预测正常 | 预测肺炎 |
+Actual/Prediction: Normal prediction: Pneumonia prediction
 |-----------|----------|----------|
-| 实际正常 | 113 | 121 |
-| 实际肺炎 | 9 | 381 |
+Actual normal: 113, 121
+Actual pneumonia cases: 9-381
 
-## 使用的技术
+The technology used
 
-- Python（PyTorch、Torchvision、NumPy、Matplotlib、Seaborn）
-- 卷积神经网络（CNN）
-- 数据增强（随机翻转、旋转）
-- GPU加速训练
+- Python (PyTorch, Torchvision, NumPy, Matplotlib, Seaborn)
+Convolutional Neural Network (CNN
+- Data augmentation (random flipping, rotation)
+Gpu-accelerated training
 
-## 如何运行
+How to run
 
-1. 克隆本仓库到本地
-2. 安装依赖：pip install torch torchvision numpy matplotlib seaborn scikit-learn
-3. 启动Jupyter Notebook，运行 pneumonia_xray_classification.ipynb
+1. Clone the repository to the local machine
+2. install dependencies: pip install torch torchvision numpy matplotlib seaborn scikit-learn
+3. Start Jupyter Notebook and run pneumonia_xray_classification.ipynb
 
-## 项目价值
+Project value
 
-- 考研/保研复试：证明具备深度学习与计算机视觉实战能力
-- 求职简历：展示PyTorch、CNN、医学图像处理项目经验
-- 医学AI入门：理解图像分类在医疗诊断中的应用
+- Postgraduate entrance examination/recommendation for postgraduate study re-examination: Prove the practical ability of deep learning and computer vision
+- Resume: Demonstrate experience in PyTorch, CNN, and medical image processing projects
+- Introduction to Medical AI: Understanding the Application of Image Classification in Medical Diagnosis
 
-## 联系方式
+Contact Information
 
-- GitHub：11zhouyuhan
-- 项目链接：https://github.com/11zhouyuhan/pneumonia-xray-classification
+-GitHub: 11zhouyuhan
+- project link: https://github.com/11zhouyuhan/pneumonia-xray-classification
